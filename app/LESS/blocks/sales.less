@@ -1,0 +1,63 @@
+@import url(../variables.less);
+@import url(../mixins.less);
+
+.sales {
+	width: 100%;
+	position: relative;
+	padding-top: 185px;
+	padding-bottom: 110px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #000;
+	background-image: url(../../img/sales.png);
+	background-size: cover;
+	z-index: -1;
+}
+.sales::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 2px;
+	height: 170px;
+	background-color: #fff;
+}
+.sales__item {
+	width: 50%;
+	text-align: center;
+}
+.sales__item-pers {
+	color: white;
+font-family: Lato;
+font-size: 82px;
+line-height: 1.4;
+font-weight: 700;
+text-transform: uppercase;
+}
+.sales__item-cost {
+	color: white;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.sales__item-text {
+	color: white;
+	font-size: 15px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.sales__item-btn {
+	padding: 0 20px;
+	color: white;
+font-family: Lato;
+font-size: 20px;
+line-height: 38px;
+font-weight: 700;
+text-transform: uppercase;
+text-decoration: none;
+
+background-color: #9c1c28;
+border-radius: 19px;
+}
